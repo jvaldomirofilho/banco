@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS conta (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	agencia VARCHAR(10) NOT NULL,
+	numero VARCHAR(10) NOT NULL,
+	saldo NUMERIC(11,2) NOT NULL,
+	UNIQUE(agencia, numero)
+);
+
